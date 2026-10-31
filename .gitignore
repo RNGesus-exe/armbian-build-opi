@@ -16,7 +16,23 @@ ubuntu-*-cloudimg-console.log
 /output/
 /cache/
 /*userpatches*/
-/userpatches
+### but track this fork's x96q-v5-1 customizations (see README-x96q.md)
+!/userpatches/
+/userpatches/*
+!/userpatches/customize-image.sh
+!/userpatches/extensions/
+!/userpatches/drivers/
+!/userpatches/firmware/
+### out-of-tree kernel module build output
+/userpatches/drivers/**/*.o
+/userpatches/drivers/**/*.ko
+/userpatches/drivers/**/*.mod
+/userpatches/drivers/**/*.mod.c
+/userpatches/drivers/**/.*.cmd
+/userpatches/drivers/**/Module.symvers
+/userpatches/drivers/**/modules.order
+### screen -L build log
+/build-screen.log
 
 ### General annoyances ###
 .DS_Store
